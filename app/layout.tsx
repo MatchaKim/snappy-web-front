@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ko" suppressHydrationWarning>
       <head>
         <ThemeModeScript />
       </head>
@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex min-h-screen w-full items-center justify-center bg-white dark:bg-gray-600">
-          <main className="flex h-full min-h-screen w-full max-w-4xl flex-col bg-white dark:bg-gray-900">
+          <main className="flex h-full min-h-screen w-full max-w-4xl flex-col rounded-lg border border-gray-200 bg-stone-50 dark:border-gray-800 dark:bg-gray-900">
             <Header />
             <div className="flex h-full flex-col">{children}</div>
           </main>

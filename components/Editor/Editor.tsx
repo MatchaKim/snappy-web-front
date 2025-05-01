@@ -1,12 +1,10 @@
 import { EditorPreview } from "@/components/EditorPreview";
+import { AnimationControlButtonGroup } from "../AnimationControlButtonGroup";
 
 const Editor = () => {
   return (
-    <div className="flex h-full w-full flex-row bg-red-500">
-      <span className="flex h-full w-1/2">
-        <EditorPreview />
-      </span>
-      <span className="flex h-full w-1/2">
+    <div className="space-between flex h-full w-full flex-col items-center">
+      <span className="flex h-full w-full items-center justify-center">
         <EditorPreview />
       </span>
     </div>

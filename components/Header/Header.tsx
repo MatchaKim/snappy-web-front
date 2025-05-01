@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  DarkThemeToggle,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
@@ -31,6 +32,7 @@ export function Header() {
           Examples
         </NavbarLink>
       </NavbarCollapse>
+      <DarkThemeToggle />
     </Navbar>
   );
 }
