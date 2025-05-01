@@ -2,7 +2,7 @@ import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "./components/Header/Header";
+import { Header } from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,10 +32,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex h-full w-full flex-col items-center justify-center bg-white dark:bg-gray-600">
-          <main className="flex h-full min-h-screen w-full max-w-4xl flex-col items-center bg-white dark:bg-gray-900">
+        <div className="flex min-h-screen w-full items-center justify-center bg-white dark:bg-gray-600">
+          <main className="flex h-full min-h-screen w-full max-w-4xl flex-col bg-white dark:bg-gray-900">
             <Header />
-            <div className="flex w-full flex-col">{children}</div>
+            <div className="flex h-full flex-col">{children}</div>
           </main>
         </div>
       </body>
