@@ -1,5 +1,7 @@
+import { Editor } from "@/components/Editor";
+
 const Builder = () => {
-  return <div>Builder</div>;
+  return <Editor />;
 };
 
 export default Builder;
